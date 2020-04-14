@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinClases.UsuariosPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="verUsuarios">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="Usuario"/>
+                                <Entry Text="{Binding usuario}"/>
+                                <Label Text="Contraseña"/>
+                                <Entry Text="{Binding contra}"/>
+                                <Label Text="Nombre"/>
+                                <Entry Text="{Binding nombre}"/>
+                                <Label Text="Edad"/>
+                                <Entry Text="{Binding edad}"/>                            
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
